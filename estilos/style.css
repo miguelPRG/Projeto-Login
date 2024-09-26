@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/*
+    Palete de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+:root{
+    --background-mobile: #5f2c82;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-color: var(--background-mobile);
+    position: relative;
+}
+
+main{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    max-width: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+}
+
+div#imagem{
+    background-image: url(../imagens/building-phone.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 230px;
+    border-radius: 15px;
+}
+
+section{
+    padding: 10px;
+    padding-bottom: 45px;
+}
+
+section h1{
+    margin-bottom: 10px;
+}
+
+section p{
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+section div{
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+}
+
+div.campo{
+    background-color: var(--background-mobile);
+    padding: 10px;
+    text-align: right !important;
+}
+
+
+section div.button input{
+    width: 100%;
+}
