@@ -8,13 +8,14 @@
 
 :root{
     --background-mobile: #5f2c82;
+    --background-aux: #49a09d;
+    --input-campo: #94cfcd;
 }
 
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,7 +38,7 @@ main{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 div#imagem{
@@ -45,7 +46,7 @@ div#imagem{
     background-size: cover;
     background-position: center center;
     height: 230px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 section{
@@ -60,10 +61,10 @@ section h1{
 section p{
     font-size: 12px;
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-section div{
+section form > div{
     height: 40px;
     margin-bottom: 5px;
     border-radius: 7px;
@@ -71,11 +72,51 @@ section div{
 
 div.campo{
     background-color: var(--background-mobile);
-    padding: 10px;
-    text-align: right !important;
+    position: relative;
 }
 
+div.campo input{
+    position: absolute;
+    left: 18%;
+    width: 80%;
+    background-color: var(--input-campo);
+    height: 90%;
+    border-radius: 10px;
+}
 
-section div.button input{
+div.campo input::placeholder{
+    color: #555;
+    padding: 5px;
+    font-size: 15px;
+}
+
+div.button input{
+    height: 100%;
+    font-size: 15px;
+}
+
+div.button input#enviar{
     width: 100%;
+    background-color: var(--background-aux);
+    border-color: var(--background-aux);
+    border-radius: 10px;
+    color: white;
+}
+
+div#button{
+
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border-color: var(--background-aux);
+    color: var(--background-aux);
+    font-size: 15px;
+}
+
+div#button span{
+    font-size: 15px;
 }
