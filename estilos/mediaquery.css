@@ -1,0 +1,54 @@
+
+
+@media screen and (min-width: 600px) and (max-width: 924px) {
+    
+    body{
+        background-image: linear-gradient(to top, var(--background-aux),var(--background-mobile));
+    }
+    
+    main {
+        width: 80vw; /* Largura do elemento main para tablets */
+    }
+
+    main div#imagem{
+        float: left;
+        width: 35%;
+        height: 324px;
+    
+    }
+
+    main section{
+        float: right;
+        width: 65%;
+    }
+
+}
+
+  
+/* Dispositivos maiores, laptops pequenos (entre 1024px e 1280px) */
+@media only screen and (min-width: 924px){
+    /* Estilos para laptops pequenos */
+
+    body{
+        background-image: linear-gradient(to top, var(--background-aux),var(--background-mobile));
+    }
+
+    main {
+        width: 900px; /* Largura do elemento main para tablets */
+    }
+    main div#imagem{
+        float: right;
+        width: 50%;
+        height: 400px;
+    }
+
+    main section{
+        float: left;
+        width: 50%;
+    }
+    
+    main section p{
+        font-size: 16px;
+    }
+
+}
