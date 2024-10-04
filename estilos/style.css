@@ -69,63 +69,38 @@ section p{
     text-align: left;
 }
 
-section form > div{
+div{
+    text-align: center;
     height: 40px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
-div{
-    text-align: center;
-}
-
 div.campo{
     background-color: var(--background-mobile);
-    text-align: right;
+    position: relative;
+}
+
+div.campo span{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    left:5%;
+    padding: 2px;
 }
 
 div.campo input{
-    
-    /*left: 18%;
-    width: 80%;
-    background-color: var(--input-campo);
-    height: 90%;
-    border-radius: 10px;*/
+    position: absolute;
     height: 100%;
-    padding: 10px;
-    padding-left: 0px;
-    margin-right: 2px;
-    border-radius: 10px;
+    right: 0%;
     background-color: var(--input-campo);
+    border-radius: 10px;
+    
 }
 
 div.campo input::placeholder{
     color: #555;
     padding: 5px;
     font-size: 16px;
-}
-
-div.button button{
-    box-shadow: none;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-div.button button#entrar{
-  
-    background-color: var(--background-aux);
-    border-color: var(--background-aux) !important;
-    color: white;
-}
-
-div.button button#senha{
-    border-color: var(--background-aux) !important;
-    color: var(--background-aux);
-}
-
-div.button button#senha span{
-    font-size: 15px;
+    text-align: left;
 }

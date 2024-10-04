@@ -22,6 +22,14 @@
         width: 65%;
     }
 
+    div.campo input{
+        left: 13%;
+    }
+
+    div.campo span{
+        padding: 2px;
+        left: 2%;
+    }
 }
 
   
@@ -51,4 +59,12 @@
         font-size: 16px;
     }
 
+    div.campo input{
+        left: 13%;
+    }
+
+    div.campo span{
+        padding: 2px;
+        left: 3%;
+    }
 }
