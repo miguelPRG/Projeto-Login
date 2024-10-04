@@ -19,25 +19,41 @@
                 
                 <form action="teste.php" method="post" autocomplete="off">
                     <div class="campo">
-                        <input type="text" name="email" id="email" placeholder="seu e-mail">
+                        <input type="text" name="email" id="email" placeholder="seu e-mail" onclick="clicarInput('email')">
                     </div>
                     
                     <div class="campo">
-                        <input type="password" name="pass" id="pass" placeholder="sua senha">
+                        <input type="password" name="pass" id="pass" placeholder="sua senha" onclick="clicarInput('pass')">
                     </div>
                     
                     <div class="button">
-                        <input type="button" id="enviar" value="Entrar">
-                    </div>
-                    
-                    <div id="button">
-                        <button>
-                            Esqueci a senha
-                            <span class="material-symbols-outlined">mail</span>
+                        <button id="entrar">
+                            Entrar
                         </button>
                     </div>
+                    
+                    <div class="button">
+                        <button id="senha">
+                            Esqueci a senha
+                          <span class="material-symbols-outlined">mail</span>
+                        </button>
+                    </div>
+                    
                 </form>
             </section>
     </main>
+    <script>
+        function clicarInput(inputId){
+            
+            const input = document.getElementById(inputId)
+            input.style.backgroundColor = 'white'
+            input.addEventListener('blur',() => restaurarBackground(input))
+        }
+
+        function restaurarBackground(input){
+            //Vamos colocar de novo a cor que estava definido na variavel Css --input-campo
+            input.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--input-campo")
+        }
+    </script>
 </body>
 </html>
