@@ -47,18 +47,5 @@
                 </form>
             </section>
     </main>
-    <script>
-        function clicarInput(inputId){
-            
-            const input = document.getElementById(inputId)
-            input.style.backgroundColor = 'white'
-            input.addEventListener('blur',() => restaurarBackground(input))
-        }
-
-        function restaurarBackground(input){
-            //Vamos colocar de novo a cor que estava definido na variavel Css --input-campo
-            input.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--input-campo")
-        }
-    </script>
 </body>
 </html>

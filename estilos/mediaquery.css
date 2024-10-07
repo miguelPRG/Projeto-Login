@@ -8,6 +8,7 @@
     
     main {
         width: 80vw; /* Largura do elemento main para tablets */
+        height: 280px;
     }
 
     main div#imagem{
@@ -22,17 +23,19 @@
         width: 65%;
     }
 
-    div.campo input{
-        left: 13%;
+}
+
+@media screen and (min-width: 600px) {
+    
+    div.campo span{
+        width: 10%;
     }
 
-    div.campo span{
-        padding: 2px;
-        left: 2%;
+    div.campo input{
+        width: 88%;
     }
 }
 
-  
 /* Dispositivos maiores, laptops pequenos (entre 1024px e 1280px) */
 @media only screen and (min-width: 924px){
     /* Estilos para laptops pequenos */
@@ -43,6 +46,7 @@
 
     main {
         width: 900px; /* Largura do elemento main para tablets */
+        height: 290px;
     }
     main div#imagem{
         float: right;
@@ -56,15 +60,7 @@
     }
     
     main section p{
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    div.campo input{
-        left: 13%;
-    }
-
-    div.campo span{
-        padding: 2px;
-        left: 3%;
-    }
 }
