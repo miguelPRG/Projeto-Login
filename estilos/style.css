@@ -42,6 +42,7 @@ main{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.452);
     transition: width 0.25s, height 0.25s;
     transition-timing-function: ease;
+    height: 520px;
 }
 
 div#imagem{
@@ -78,29 +79,44 @@ div{
 
 div.campo{
     background-color: var(--background-mobile);
-    position: relative;
-}
-
-div.campo span{
-    position: absolute;
-    font-size: 30px;
-    color: white;
-    left:5%;
-    padding: 2px;
-}
-
-div.campo input{
-    position: absolute;
-    height: 100%;
-    right: 0%;
-    background-color: var(--input-campo);
-    border-radius: 10px;
     
 }
 
-div.campo input::placeholder{
-    color: #555;
+input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+input#entrar{
+    background-color: var(--background-aux);
+    color: white;
+    border: none;
+}
+
+input#entrar:hover{
+    background-color: #285755f8;
+}
+
+div#senha{
+    color: var(--background-aux);
+    border: 1px solid var(--background-aux);
     padding: 5px;
-    font-size: 16px;
-    text-align: left;
+}
+
+div#senha a{
+    text-decoration: none;
+    color: var(--background-aux);
+}
+
+div#senha a > span{
+    font-size: 1em;
+}
+
+div#senha:hover{
+    background-color: var(--input-campo);
 }

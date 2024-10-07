@@ -13,7 +13,7 @@
     main div#imagem{
         float: left;
         width: 35%;
-        height: 324px;
+        height: 100%;
     
     }
 
@@ -47,7 +47,7 @@
     main div#imagem{
         float: right;
         width: 50%;
-        height: 400px;
+        height: 100%;
     }
 
     main section{
