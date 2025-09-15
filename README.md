@@ -1,2 +1,2 @@
 # Projeto Login
-Um projeto para treinar as minhas habilidades de HTML E CSS. Uma simples página de Login.
+A project to practice my HTML and CSS skills. A simple login page.
